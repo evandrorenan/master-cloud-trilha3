@@ -1,0 +1,23 @@
+{
+	"name": "RestResource1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AlphaVantageService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"symbol": {
+				"type": "string"
+			},
+			"apikey": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={symbol}&apikey={apikey}"
+		},
+		"schema": []
+	}
+}
