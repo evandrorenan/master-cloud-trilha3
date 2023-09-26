@@ -50,6 +50,12 @@
 				"defaultValue": "{​​​​​​\"value\":\"@linkedService('kvdp900').secrets.AlphaVantage\",\"type\":\"Expression\"}​​​​​​"
 			}
 		},
+		"variables": {
+			"symbol": {
+				"type": "String",
+				"defaultValue": "BBD"
+			}
+		},
 		"annotations": []
 	}
 }
