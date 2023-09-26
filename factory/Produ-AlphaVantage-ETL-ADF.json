@@ -1,5 +1,13 @@
 {
 	"name": "Produ-AlphaVantage-ETL-ADF",
+	"properties": {
+		"globalParameters": {
+			"environment": {
+				"type": "string",
+				"value": "bas"
+			}
+		}
+	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
