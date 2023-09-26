@@ -53,7 +53,7 @@
 		"variables": {
 			"symbol": {
 				"type": "String",
-				"defaultValue": "BBD"
+				"defaultValue": "BBDC4.SA"
 			}
 		},
 		"annotations": []
