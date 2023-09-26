@@ -1,6 +1,16 @@
 {
 	"name": "pipeline1",
 	"properties": {
+		"parameters": {
+			"raw_layer": {
+				"type": "string",
+				"defaultValue": "bronze"
+			},
+			"apikey": {
+				"type": "string",
+				"defaultValue": "{​​​​​​\"value\":\"@linkedService('kvdp900').secrets.AlphaVantage\",\"type\":\"Expression\"}​​​​​​"
+			}
+		},
 		"annotations": []
 	}
 }
