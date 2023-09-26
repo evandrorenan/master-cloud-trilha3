@@ -16,7 +16,7 @@
 		"annotations": [],
 		"type": "RestResource",
 		"typeProperties": {
-			"relativeUrl": "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={symbol}&apikey={apikey}"
+			"relativeUrl": "function=TIME_SERIES_DAILY&symbol={symbol}&apikey={apikey}"
 		},
 		"schema": []
 	}
