@@ -1,5 +1,5 @@
 {
-	"name": "RestResource1",
+	"name": "AlphaVantageDailyInput",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AlphaVantageService",
