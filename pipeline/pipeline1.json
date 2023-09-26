@@ -24,6 +24,15 @@
 							"supportRFC5988": "true"
 						}
 					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -31,6 +40,22 @@
 						"referenceName": "AlphaVantageDailyInput",
 						"type": "DatasetReference",
 						"parameters": {
+							"symbol": {
+								"value": "@variables('symbol')",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AlphaVantageDailyOutputDataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"layer": {
+								"value": "@pipeline().parameters.raw_layer",
+								"type": "Expression"
+							},
 							"symbol": {
 								"value": "@variables('symbol')",
 								"type": "Expression"
