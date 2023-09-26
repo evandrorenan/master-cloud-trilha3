@@ -17,7 +17,7 @@
 		"type": "RestResource",
 		"typeProperties": {
 			"relativeUrl": {
-				"value": "@concat('function=TIME_SERIES_DAILY&symbol=', dataset().symbol, '&apikey=', dataset().apikey)",
+				"value": "@concat('function=TIME_SERIES_DAILY&symbol=',dataset().symbol, '&apikey=', dataset().apikey)",
 				"type": "Expression"
 			}
 		},
