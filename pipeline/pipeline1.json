@@ -43,6 +43,10 @@
 							"symbol": {
 								"value": "@variables('symbol')",
 								"type": "Expression"
+							},
+							"apikey": {
+								"value": "@pipeline().parameters.apikey",
+								"type": "Expression"
 							}
 						}
 					}
